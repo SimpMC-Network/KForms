@@ -1,0 +1,44 @@
+title: "&fTitle"
+register_command: false
+open_commands: menu
+#Form type: Modal, Simple, Custom (now only support Simple. I will update later)
+type: SIMPLE_FORM
+requirements:
+  exp:
+    type: has exp
+    amount: 10
+    deny_commands:
+      - "[message] NO"
+contents:
+  button1:
+    type: Button
+    text: "&aButton1"
+    commands:
+      - "[player] gmc"
+      - "[console] say hello"
+    requirements:
+      deny_commands:
+        - "[message] No No"
+      exp:
+        type: has exp
+        amount: 100
+        success_commands:
+          - "[message] YES"
+        deny_commands:
+          - "[message] NO"
+      exp1:
+        type: has exp
+        amount: 50
+        success_commands:
+          - "[message] YES1"
+        deny_commands:
+          - "[message] NO1"
+
+  button2:
+    type: Button
+    text: "&bButton2"
+    url: "https://github.com/GeyserMC.png?size=200"
+  info:
+    type: Content
+    text:
+      - "&aHello %player_name%"

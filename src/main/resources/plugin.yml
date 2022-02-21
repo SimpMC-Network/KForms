@@ -1,0 +1,11 @@
+name: KForms
+version: ${projectVersion}
+main: me.khanh.plugin.kforms.KForms
+api-version: 1.16
+depend: [ floodgate, PlaceholderAPI ]
+authors: [ KhanhHuynh ]
+loadbefore:
+  - DeluxeMenus
+commands:
+  kfroms:
+    aliases: [ kforms, kform, kf ]
